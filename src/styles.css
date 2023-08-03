@@ -18,3 +18,10 @@
   padding: 0;
   margin: 0;
 }
+.inner-link {
+  color: rgb(247, 215, 220);
+}
+footer {
+  background-color: rgb(2, 2, 62);
+  color: white;
+}
