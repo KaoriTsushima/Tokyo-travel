@@ -18,8 +18,40 @@
   padding: 0;
   margin: 0;
 }
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
 .inner-link {
   color: rgb(247, 215, 220);
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 footer {
   background-color: rgb(2, 2, 62);
