@@ -32,10 +32,16 @@
 .grid-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-.img-responsive {
+.img-responsive,
+.img-ramen {
   max-width: 100%;
   display: block;
   object-fit: cover;
+}
+.img-ramen {
+  height: 300px;
+  margin: 0 auto;
+  filter: brightness(123%);
 }
 .secondary {
   background-color: rgb(196, 244, 228);
@@ -95,11 +101,38 @@ li {
 }
 
 table {
-  margin: 1rem auto;
+  margin: 50px auto;
   text-align: left;
 }
 
 table thead tr th:first-child {
   width: 40%;
   overflow: auto;
+}
+iframe {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+}
+body {
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .header h1 {
+    font-size: 34px;
+  }
+  .header h3 {
+    font-size: 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .secondary h3 {
+    font-size: 16pt;
+  }
+  .table-container h2 {
+    font-size: 16pt;
+    overflow-x: auto;
+  }
 }
